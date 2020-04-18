@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Girassol&family=Open+Sans+Condensed:ital,wght@1,300&family=Romanesco&family=Slabo+27px&display=swap');
+            /**
+            font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Girassol', cursive;
+font-family: 'Slabo 27px', serif;
+font-family: 'Romanesco', cursive;
+font-family: 'Fascinate', cursive;
+            **/
+            .modal{
+                position: absolute;
+            }
+            .maindiv{
+    background-image: url("https://cdn.hipwallpaper.com/i/54/25/AVpTP7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+            #secdiv{
+                background-image: url("https://wallpapercave.com/wp/SIkIzca.jpg");
+            }
+            label{
+                color:beige;
+                font-size: 25px;
+                font-family: 'Slabo 27px', serif;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Are You Unique? Dare Challange</title>
+    </head>
+    <body>
+        <div class="maindiv">
+            <div class="container" id="secdiv">
+                <div class="well text-center" >
+                <h1 style="font-family: 'Fascinate', cursive; color: brown; font-size: 50px;"><u><i>ARE YOU UNIQUE?</i></u></h1>
+                <h3 style="font-family: 'Romanesco', cursive; font-size: 30px">Come, we will See How UNIQUE you are Among your friends.</h3></div>
+                <form class="text-center">
+                    <label color="black">Enter your Name?</label>
+                    <input type="text" class="form-control" id="name"><br>
+                    <label>On which date is your BDAY?</label>
+                    <input type="date" class="form-control" id="date"><br>
+                    <label>Which COLOR do you like?</label>
+                    <input type="text" class="form-control" id="clr"><br>
+                    <label>What is your favorate DISH?</label>
+                    <input type="text" class="form-control" id="dish"><br>
+                    <label>Which FLOWER do you like most?</label>
+                    <input type="text" class="form-control" id="flower"><br>
+                    <label>Which FRUIT do you like Most?</label>
+                    <input type="text" class="form-control" id="fruit"><br>
+                    <label>What is your best HOLIDAY SPOT?</label>
+                    <input type="text" class="form-control" id="hspot"><br>
+                    <label>What is your DREAM JOB?</label>
+                    <input type="text" class="form-control" id="job"><br>
+                    <label>Mention Some HOBBIES of you.</label>
+                    <input type="text" class="form-control" id="hobbies"><br>
+                    <label>QUOTE which Inspires you the Most?</label>
+                    <input type="text" class="form-control" id="quote"><br>
+                </form>
+                <button id="myBtn" class="btn-lg btn-block btn-danger">Submit</button>
+            </div>
+            <div class="container" style="background-color: white; margin: 1%">
+            </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" style="position: absolute">
+
+  <!-- Modal content -->
+  <div class="modal-content container">
+    <span class="close">&times;</span>
+      <div class="row" style="background-color:darksalmon">
+          <div class="col-md-3">
+    <h3 class="text-center">Here is some Details Of</h3></div>
+      <div class="col-md-3"><p id="demo" style="font-family: 'Girassol', cursive; color: brown; font-size: 30px " class="text-center"></p></div>
+          <div class="col-md-6"><h3 class="text-center">Do we Have any similarities?</h3></div>
+      </div>
+       <div class="row">
+           <div class="col-md-6">
+      <p style="font-family: 'Open Sans Condensed', sans-serif; color: #C0392B; font-size: 30px">1. Here is my Date Of Birth:</p>
+               <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="datev"></p></div>
+           <div class="col-md-6">
+      <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here is my Favourite Color:</p>
+               <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="clrv"></p></div><div class="col-md-6">
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #2471A3; font-size: 30px">1. Here is my Favourite Dish:</p>
+           <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="dishv"></p></div><div class="col-md-6">
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here is my Favourite Flower:</p>
+           <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="flowerv"></p></div><div class="col-md-6">
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here is my Favourite Fruit:</p>
+           <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="fruitv"></p></div><div class="col-md-6">
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here is my Favourite Holiday Spot:</p>
+           <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="hspotv"></p></div><div class="col-md-6">
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here is my Dream Job:</p>
+           <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="jobv"></p></div>
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here are my Hobbies:</p>
+      <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="hobbiesv"></p><div class="col-md-6">
+       <p style="font-family: 'Open Sans Condensed', sans-serif; color: #884EA0; font-size: 30px">1. Here is a Quote inspires me Most:</p>
+           <p style="font-family: 'Romanesco', cursive; font-size: 30px" id="quotev"></p></div></div>
+  </div>
+
+</div>
+
+        </div>
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+  var a=document.getElementById("name").value;
+    var b=document.getElementById("date").value;
+    var c=document.getElementById("clr").value;
+    var d=document.getElementById("dish").value;
+    var e=document.getElementById("flower").value;
+    var f=document.getElementById("fruit").value;
+    var g=document.getElementById("hspot").value;
+    var h=document.getElementById("job").value;
+    var i=document.getElementById("hobbies").value;
+    var j=document.getElementById("quote").value;
+    document.getElementById("demo").innerHTML=a;
+    document.getElementById("datev").innerHTML=b;
+    document.getElementById("clrv").innerHTML=c;
+    document.getElementById("dishv").innerHTML=d;
+    document.getElementById("flowerv").innerHTML=e;
+    document.getElementById("fruitv").innerHTML=f;
+    document.getElementById("hspotv").innerHTML=g;
+    document.getElementById("jobv").innerHTML=h;
+    document.getElementById("hobbiesv").innerHTML=i;
+    document.getElementById("quotev").innerHTML=j;
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        </script>
+    </body>
+</html>
